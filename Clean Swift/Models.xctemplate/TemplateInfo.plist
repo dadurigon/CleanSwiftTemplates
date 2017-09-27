@@ -36,6 +36,7 @@
   <key>Platforms</key>
   <array>
 		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
   </array>
 	<key>SortOrder</key>
 	<string>4</string>
