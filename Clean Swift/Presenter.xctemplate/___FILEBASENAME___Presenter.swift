@@ -13,7 +13,7 @@
 import Foundation
 
 protocol ___VARIABLE_sceneName___PresentationLogic {
-    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
+    func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response)
 }
 
 class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
@@ -21,8 +21,8 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLog
 
     // MARK: Do something
 
-    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
-        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+    func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response) {
+        let viewModel = ___VARIABLE_sceneName___.Fetch.ViewModel()
         viewController?.displaySomething(viewModel: viewModel)
     }
 }

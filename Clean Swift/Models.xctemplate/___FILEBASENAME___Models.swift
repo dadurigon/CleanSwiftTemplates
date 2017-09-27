@@ -15,17 +15,17 @@ import UIKit
 enum ___VARIABLE_sceneName___ {
     // MARK: Use cases
 
-    enum Something {
-      struct Request {
+    enum Fetch {
+        struct Request {
 
-      }
+        }
 
-      struct Response {
+        struct Response {
 
-      }
+        }
 
-      struct ViewModel {
+        struct ViewModel {
 
-      }
+        }
     }
 }

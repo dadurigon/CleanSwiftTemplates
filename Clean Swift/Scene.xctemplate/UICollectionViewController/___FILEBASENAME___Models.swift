@@ -15,8 +15,8 @@ import UIKit
 enum ___VARIABLE_sceneName___
 {
   // MARK: Use cases
-  
-  enum Something
+
+  enum Fetch
   {
     struct Request
     {

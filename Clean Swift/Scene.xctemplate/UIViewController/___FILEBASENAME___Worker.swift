@@ -10,11 +10,11 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
 
-class ___VARIABLE_sceneName___Worker
-{
-  func doSomeWork()
-  {
-  }
+class ___VARIABLE_sceneName___Worker {
+
+    func doSomeWork() {
+
+    }
 }

@@ -10,11 +10,11 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
 
 protocol ___VARIABLE_sceneName___BusinessLogic
 {
-  func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
+  func doSomething(request: ___VARIABLE_sceneName___.Fetch.Request)
 }
 
 protocol ___VARIABLE_sceneName___DataStore
@@ -27,15 +27,15 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
   var presenter: ___VARIABLE_sceneName___PresentationLogic?
   var worker: ___VARIABLE_sceneName___Worker?
   //var name: String = ""
-  
+
   // MARK: Do something
-  
-  func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
+
+  func doSomething(request: ___VARIABLE_sceneName___.Fetch.Request)
   {
     worker = ___VARIABLE_sceneName___Worker()
     worker?.doSomeWork()
-    
-    let response = ___VARIABLE_sceneName___.Something.Response()
+
+    let response = ___VARIABLE_sceneName___.Fetch.Response()
     presenter?.presentSomething(response: response)
   }
 }
