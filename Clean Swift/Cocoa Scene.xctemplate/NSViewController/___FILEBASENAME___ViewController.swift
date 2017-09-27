@@ -22,7 +22,7 @@ class ___VARIABLE_sceneName___ViewController: NSViewController, ___VARIABLE_scen
 
     // MARK: Object lifecycle
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
