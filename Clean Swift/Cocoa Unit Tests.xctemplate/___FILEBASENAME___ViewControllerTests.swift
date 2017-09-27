@@ -41,8 +41,7 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     }
 
     func loadView() {
-        window.addSubview(sut.view)
-        RunLoop.current.run(until: Date())
+
     }
 
     // MARK: Test doubles
