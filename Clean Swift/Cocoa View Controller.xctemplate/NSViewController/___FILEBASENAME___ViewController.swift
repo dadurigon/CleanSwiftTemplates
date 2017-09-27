@@ -32,6 +32,17 @@ class ___VARIABLE_sceneName___ViewController: NSViewController, ___VARIABLE_scen
         setup()
     }
 
+    // MARK: Routing
+
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if let scene = segue.identifier {
+            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+            if let router = router, router.responds(to: selector) {
+                router.perform(selector, with: segue)
+            }
+        }
+    }
+
     // MARK: Setup
 
     private func setup() {
