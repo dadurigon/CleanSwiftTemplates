@@ -13,57 +13,50 @@
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
-class ___VARIABLE_sceneName___PresenterTests: XCTestCase
-{
-  // MARK: Subject under test
+class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
+    // MARK: Subject under test
 
-  var sut: ___VARIABLE_sceneName___Presenter!
+    var sut: ___VARIABLE_sceneName___Presenter!
 
-  // MARK: Test lifecycle
+    // MARK: Test lifecycle
 
-  override func setUp()
-  {
-    super.setUp()
-    setup___VARIABLE_sceneName___Presenter()
-  }
-
-  override func tearDown()
-  {
-    super.tearDown()
-  }
-
-  // MARK: Test setup
-
-  func setup___VARIABLE_sceneName___Presenter()
-  {
-    sut = ___VARIABLE_sceneName___Presenter()
-  }
-
-  // MARK: Test doubles
-
-  class ___VARIABLE_sceneName___DisplayLogicSpy: ___VARIABLE_sceneName___DisplayLogic
-  {
-    var displaySomethingCalled = false
-
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Fetch.ViewModel)
-    {
-      displaySomethingCalled = true
+    override func setUp() {
+        super.setUp()
+        setup___VARIABLE_sceneName___Presenter()
     }
-  }
 
-  // MARK: Tests
+    override func tearDown() {
+        super.tearDown()
+    }
 
-  func testPresentSomething()
-  {
-    // Given
-    let spy = ___VARIABLE_sceneName___DisplayLogicSpy()
-    sut.viewController = spy
-    let response = ___VARIABLE_sceneName___.Fetch.Response()
+    // MARK: Test setup
 
-    // When
-    sut.presentSomething(response: response)
+    func setup___VARIABLE_sceneName___Presenter() {
+        sut = ___VARIABLE_sceneName___Presenter()
+    }
 
-    // Then
-    XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
-  }
+    // MARK: Test doubles
+
+    class ___VARIABLE_sceneName___DisplayLogicSpy: ___VARIABLE_sceneName___DisplayLogic {
+        var displaySomethingCalled = false
+
+        func displaySomething(viewModel: ___VARIABLE_sceneName___.Fetch.ViewModel) {
+            displaySomethingCalled = true
+        }
+    }
+
+    // MARK: Tests
+
+    func testPresentSomething() {
+        // Given
+        let spy = ___VARIABLE_sceneName___DisplayLogicSpy()
+        sut.viewController = spy
+        let response = ___VARIABLE_sceneName___.Fetch.Response()
+
+        // When
+        sut.presentSomething(response: response)
+
+        // Then
+        XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
+    }
 }

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+## 3.0.3
+
+- Add Scenes for macOS
+- Formatted tabs and braces
+
 ## 3.0.2
 
 - Fixed @testable import for project names containing spaces
