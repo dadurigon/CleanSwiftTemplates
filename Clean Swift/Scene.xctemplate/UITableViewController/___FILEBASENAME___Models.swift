@@ -14,18 +14,19 @@ import UIKit
 
 enum ___VARIABLE_sceneName___
 {
-  // MARK: Use cases
+    // MARK: Use cases
 
-  enum Fetch
-  {
-    struct Request
-    {
+    enum Fetch {
+        struct Request {
+
+        }
+
+        struct Response {
+
+        }
+
+        struct ViewModel {
+
+        }
     }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
 }

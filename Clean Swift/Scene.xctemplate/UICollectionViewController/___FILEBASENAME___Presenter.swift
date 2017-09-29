@@ -12,20 +12,17 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___PresentationLogic
-{
-  func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response)
+protocol ___VARIABLE_sceneName___PresentationLogic {
+    func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response)
 }
 
-class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic
-{
-  weak var viewController: ___VARIABLE_sceneName___DisplayLogic?
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
+    weak var viewController: ___VARIABLE_sceneName___DisplayLogic?
 
-  // MARK: Do something
+    // MARK: Do something
 
-  func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response)
-  {
-    let viewModel = ___VARIABLE_sceneName___.Fetch.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    func presentSomething(response: ___VARIABLE_sceneName___.Fetch.Response) {
+        let viewModel = ___VARIABLE_sceneName___.Fetch.ViewModel()
+        viewController?.displaySomething(viewModel: viewModel)
+    }
 }
