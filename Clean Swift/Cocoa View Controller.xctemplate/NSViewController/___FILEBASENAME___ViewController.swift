@@ -18,7 +18,7 @@ class ___VARIABLE_sceneName___ViewController: NSViewController, ___VARIABLE_scen
 
     // MARK: Object lifecycle
 
-    override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
@@ -63,7 +63,7 @@ class ___VARIABLE_sceneName___ViewController: NSViewController, ___VARIABLE_scen
 
     // MARK: Do something
 
-    //@IBOutlet weak var nameTextField: UITextField!
+    //@IBOutlet weak var nameTextField: NSTextField!
 
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Fetch.Request()
@@ -71,6 +71,6 @@ class ___VARIABLE_sceneName___ViewController: NSViewController, ___VARIABLE_scen
     }
 
     func displaySomething(viewModel: ___VARIABLE_sceneName___.Fetch.ViewModel) {
-        //nameTextField.text = viewModel.name
+        //nameTextField.stringValue = viewModel.name
     }
 }
